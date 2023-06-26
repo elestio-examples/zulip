@@ -82,10 +82,9 @@ services:
       SETTING_EXTERNAL_HOST: ${DOMAIN}
       SETTING_ZULIP_ADMINISTRATOR: ${ADMIN_EMAIL}
       SETTING_EMAIL_HOST: ${SMTP_HOST}
-      SETTING_EMAIL_HOST_USER: ${SMTP_FROM_EMAIL}
+      SETTING_EMAIL_HOST_USER: ""
       SETTING_EMAIL_PORT: ${SMTP_PORT}
       # It seems that the email server needs to use ssl or tls and can't be used without it
-      SETTING_EMAIL_USE_SSL: "False"
       SETTING_EMAIL_USE_TLS: "False"
       SETTING_ADD_TOKENS_TO_NOREPLY_ADDRESS: "False"
       SETTING_NOREPLY_EMAIL_ADDRESS: ${SMTP_FROM_EMAIL}
