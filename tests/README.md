@@ -11,6 +11,8 @@
 [Zulip](https://github.com/zulip/docker-zulip) combines the immediacy of real-time chat with an email threading model.
 With Zulip, you can catch up on important conversations while ignoring irrelevant ones.
 
+<img src="https://github.com/elestio-examples/zulip/raw/main/zulip.png" alt="zulip" width="800">
+
 Deploy a <a target="_blank" href="https://elest.io/open-source/zulip">fully managed Zulip</a> on <a target="_blank" href="https://elest.io/">elest.io</a> if you want automated backups, reverse proxy with SSL termination, firewall, automated OS & Software updates, and a team of Linux experts and open source enthusiasts to ensure your services are always safe, and functional.
 
 [![deploy](https://github.com/elestio-examples/zulip/raw/main/deploy-on-elestio.png)](https://dash.elest.io/deploy?source=cicd&social=dockerCompose&url=https://github.com/elestio-examples/zulip)
