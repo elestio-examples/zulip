@@ -71,7 +71,7 @@ services:
       SETTING_MEMCACHED_LOCATION: "memcached:11211"
       SETTING_RABBITMQ_HOST: "rabbitmq"
       SETTING_REDIS_HOST: "redis"
-      SECRETS_email_password: ${ADMIN_PASSWORD}
+      SECRETS_email_password: 123456789
       # These should match RABBITMQ_DEFAULT_PASS, POSTGRES_PASSWORD,
       # MEMCACHED_PASSWORD, and REDIS_PASSWORD above.
       SECRETS_rabbitmq_password: ${RABBITMQ_DEFAULT_PASS}
@@ -81,13 +81,14 @@ services:
       SECRETS_secret_key: ${ADMIN_PASSWORD}
       SETTING_EXTERNAL_HOST: ${DOMAIN}
       SETTING_ZULIP_ADMINISTRATOR: ${ADMIN_EMAIL}
-      SETTING_EMAIL_HOST: ${SMTP_HOST}
-      SETTING_EMAIL_HOST_USER: ""
+      SETTING_EMAIL_HOST: ""
+      SETTING_EMAIL_HOST_USER: ${SMTP_FROM_EMAIL}
       SETTING_EMAIL_PORT: ${SMTP_PORT}
       # It seems that the email server needs to use ssl or tls and can't be used without it
       SETTING_EMAIL_USE_TLS: "False"
-      SETTING_ADD_TOKENS_TO_NOREPLY_ADDRESS: "False"
-      SETTING_NOREPLY_EMAIL_ADDRESS: ${SMTP_FROM_EMAIL}
+      SETTING_EMAIL_USE_SSL: "True"
+      # SETTING_ADD_TOKENS_TO_NOREPLY_ADDRESS: "False"
+      # SETTING_NOREPLY_EMAIL_ADDRESS: ${SMTP_FROM_EMAIL}
       ZULIP_AUTH_BACKENDS: "EmailAuthBackend"
       # Uncomment this when configuring the mobile push notifications service
       # SETTING_PUSH_NOTIFICATION_BOUNCER_URL: 'https://push.zulipchat.com'
