@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 sed -i "s~ARG UBUNTU_MIRROR~ARG UBUNTU_MIRROR='http://us.archive.ubuntu.com/ubuntu/'~g" Dockerfile
-docker buildx build . --output type=docker,name=elestio4test/zulip:6.2-0 | docker load
+docker buildx build . --output type=docker,name=elestio4test/zulip:latest | docker load
