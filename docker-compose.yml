@@ -89,6 +89,7 @@ services:
       SETTING_ADD_TOKENS_TO_NOREPLY_ADDRESS: "False"
       SETTING_NOREPLY_EMAIL_ADDRESS: ${SMTP_FROM_EMAIL}
       ZULIP_AUTH_BACKENDS: "EmailAuthBackend"
+      LOADBALANCER_IPS: 172.0.0.0/8
       # Uncomment this when configuring the mobile push notifications service
       # SETTING_PUSH_NOTIFICATION_BOUNCER_URL: 'https://push.zulipchat.com'
     volumes:

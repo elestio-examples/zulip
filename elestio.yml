@@ -21,7 +21,7 @@ environments:
   - key: "REDIS_PASSWORD"
     value: "random_password"
   - key: "SOFTWARE_VERSION_TAG"
-    value: "6.2-0"
+    value: "8.0-0"
   - key: "DOMAIN"
     value: "[CI_CD_DOMAIN]"
   - key: "SMTP_HOST"
