@@ -79,6 +79,7 @@ services:
       SECRETS_memcached_password: ${MEMCACHED_PASSWORD}
       SECRETS_redis_password: ${REDIS_PASSWORD}
       SECRETS_secret_key: ${ADMIN_PASSWORD}
+      SETTING_ALLOWED_HOSTS: '["172.17.0.1", "localhost.localdomain"]'
       SETTING_EXTERNAL_HOST: "localhost.localdomain"
       SETTING_ZULIP_ADMINISTRATOR: ${ADMIN_EMAIL}
       SETTING_EMAIL_HOST: ""
